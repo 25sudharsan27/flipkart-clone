@@ -1,17 +1,16 @@
 import './App.css';
 import axios from 'axios';
 import React,{useState,useEffect} from 'react';
-const url="https://probable-potato-pvjr6gpvxw4f5x4-3000.app.github.dev"
 
 function App() {
-  const [categories,setcategories]=useState([]);
+  const [categor,setcategories]=useState([]);
   
-  useEffect(()=>{
-    axios.get("https://probable-potato-pvjr6gpvxw4f5x4-3000.app.github.dev")
-    .then(result=>setcategories(result.data))
-    .catch(err=>console.log(err))
-  },[])
-  
+
+  useEffect(() => {
+    axios.get("http://localhost:3000")  // Change the URL to your server endpoint
+      .then(result => setcategories(result.data))
+      .catch(err => console.log(err))
+  }, [])
   return (
     <div className="body">
       <div className="navbar">
@@ -23,7 +22,7 @@ function App() {
         </div>
         <div className="engine">
           <a className="engine1" href="#" >
-            <svg width="24" height="24" class="" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Search Icon</title><path d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z" stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 16L21 21" stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <svg width="24" height="24"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><title>Search Icon</title><path d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z" stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 16L21 21" stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
           </a>
           <input className="search" type="text" placeholder="Search for Producs, Brands and More"></input>
         </div>
@@ -76,16 +75,16 @@ function App() {
       </div>
 
       <div className="categories">
-        {categories.map((category)=>{
-          return(
-            <div className="cate">
-              <img src="{category.name}" alt="" />
-              <h1>{category.image}</h1>
-            </div>
-          )
-        })
-        } 
+      {categor.map((category) => {
+        return (
+          <div className="cate" key={category._id}>
+            <img className="cateimg" src={category.image} alt="" />
+            <a className="cateline" href="#">{category.name}</a>
+          </div>
+        );
+      })}
       </div>
+
     </div>
 
   );

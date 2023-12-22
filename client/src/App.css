@@ -146,15 +146,67 @@
 
 .categories {
   width: 96.5%;
-  height: 140px;
   display: flex;
+  position:relative;
   background-color: white;
   margin:20px;
+  justify-content:space-evenly;
+  align-items:center;
+}
+
+/* Modern Scroll Design for Categories without visible scrollbar */
+.categories {
+  width: 96.5%;
+  height: 140px;
+  display: flex;
+  position: relative;
+  background-color: white;
+  margin: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: transparent transparent; /* Firefox */
+}
+
+.categories::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Optional: Add a gradient overlay to indicate scroll position */
+.categories::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 20px; /* Adjust as needed */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
 }
 
 .cate{
+  padding:30px;
   display:flex;
   flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  font-weight: 300;
+  font-size: 17px;
+  font-family: inter_regular, fallback-inter_regular, Arial, sans-serif;
+}
+.cateline{
+  text-decoration: none;
+  color:black;
+  font-family: inter_regular,fallback-inter_regular,Arial,sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight:500;
+  
+}
+.cateimg{
+  height:60px;
+  width:60px;
 }
 
 .accountbutton1{
@@ -162,6 +214,8 @@
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
+
+
 
 /* Media Query for Mobile */
 @media only screen and (max-width: 600px) {
@@ -199,10 +253,18 @@
   
 }
 
+@media (max-width:1192px){
+  .categories{
+    overflow-x: scroll;
+    justify-content:normal;
+  }
+}
+
 @media only screen and (max-width: 1192){
   .categories{
     overflow-x: scroll;
     justify-content:normal;
+    ;
   }
 
 }
