@@ -19,6 +19,17 @@ app.get("/", (req, res) => {
     .then(user=>res.json(user))
     .catch(err=>res.json(err))
 });
+app.get("/ss",(req,res)=>{
+    console.log("sudharsan opened a connection");
+    UserModel.find({})
+    .then(user=>{
+        console.log(user[0].categories)
+        res.json(user[0].categories);
+    
+    }
+        )
+    .catch(err=>res.json(err))
+})
 
 app.listen(3000, () => {
     console.log("Server is running at http://localhost:3000");

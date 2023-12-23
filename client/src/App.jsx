@@ -4,13 +4,22 @@ import React,{useState,useEffect} from 'react';
 
 function App() {
   const [categor,setcategories]=useState([]);
-  
+  const [products, setProducts] = useState([]);
+  const [sliders, setSliders] = useState([]);
 
   useEffect(() => {
     axios.get("http://localhost:3000")  // Change the URL to your server endpoint
-      .then(result => setcategories(result.data))
-      .catch(err => console.log(err))
-  }, [])
+      .then(result => {
+        // Assuming the API response has a structure like { categories: [], products: [], sliders: [] }
+        setcategories(result.data[0].categories);
+        console.log(result.data[0].categories);
+        setProducts(result.data[2].productcat);
+        console.log(result.data[2].productcat);
+        setSliders(result.data[1].imgslider);
+        console.log(result.data[1].imgslider);
+      })
+      .catch(err => console.log(err));
+  }, []);
   return (
     <div className="body">
       <div className="navbar">
@@ -84,6 +93,22 @@ function App() {
         );
       })}
       </div>
+      <section className="container">
+        <div className="slider-wrapper">
+          <div className="slider">
+            <img id="slider-1" src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/4f9ffd5f11a2a4b9.jpg?q=20"/>
+            <img id="slider-2" src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/a787505b979e7579.jpg?q=20"/>
+            <img id="slider-3" src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/b1d99ada6bab3722.jpg?q=20"/>
+
+          </div>
+          <div className="slider-nav">
+            <a href="#slider-1"></a>
+            <a href="#slider-2"></a>
+            <a href="#slider-3"></a>
+          </div>
+        </div>
+      </section>
+      
 
     </div>
 
