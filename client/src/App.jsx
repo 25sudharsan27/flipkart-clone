@@ -13,10 +13,10 @@ function App() {
         // Assuming the API response has a structure like { categories: [], products: [], sliders: [] }
         setcategories(result.data[0].categories);
         console.log(result.data[0].categories);
-        setProducts(result.data[2].productcat);
-        console.log(result.data[2].productcat);
-        setSliders(result.data[1].imgslider);
-        console.log(result.data[1].imgslider);
+        setProducts(result.data[0].productcat);
+        console.log(result.data[0].productcat);
+        setSliders(result.data[0].imgslider);
+        console.log(result.data[0].imgslider);
       })
       .catch(err => console.log(err));
   }, []);
@@ -95,20 +95,43 @@ function App() {
       </div>
       <section className="container">
         <div className="slider-wrapper">
-          <div className="slider">
-            <img id="slider-1" src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/4f9ffd5f11a2a4b9.jpg?q=20"/>
-            <img id="slider-2" src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/a787505b979e7579.jpg?q=20"/>
-            <img id="slider-3" src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/b1d99ada6bab3722.jpg?q=20"/>
 
+          <div className="slider">
+            {sliders.map((slider)=>{
+              return(
+                <img className={`${slider.name}`} src={slider.image} alt=""/>
+              )
+            })}
           </div>
           <div className="slider-nav">
-            <a href="#slider-1"></a>
-            <a href="#slider-2"></a>
-            <a href="#slider-3"></a>
+            {sliders.map((slider)=>{
+              return(
+                <a href={`#${slider.name}`} key={slider.name}></a>
+              )
+            })}
           </div>
         </div>
       </section>
-      
+      {
+        products.map((product)=>{
+          return(
+            <div className="product">
+              <div className="productcategory">{product.name}</div>
+              {product.products.map((product1)=>{
+                return(
+                  <div className="products">
+                    <div className="product1">
+                      <img className="productimg" src={product1.image} alt=""/>
+                      <div className="productname">{product1.name}</div>
+                      <div className="productprice">{product1.price}</div>
+                    </div>
+                  </div>
+                )}
+              )}
+            </div>
+          )
+        })
+      }
 
     </div>
 

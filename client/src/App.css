@@ -156,7 +156,7 @@
 }
 
 /* Modern Scroll Design for Categories without visible scrollbar */
-.categories {
+.categories,.product {
   width: 96.5%;
   height: 140px;
   display: flex;
@@ -169,14 +169,18 @@
   scrollbar-width: thin; /* Firefox */
   scrollbar-color: transparent transparent; /* Firefox */
 }
+.product{
+  height: 300px;
+  flex-direction:column;
+}
 
-.categories::-webkit-scrollbar {
+.categories::-webkit-scrollbar,.product::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 
 /* Optional: Add a gradient overlay to indicate scroll position */
-.categories::before {
+.categories::before,.product::before {
   content: '';
   position: absolute;
   top: 0;
@@ -185,6 +189,8 @@
   width: 20px; /* Adjust as needed */
   background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
 }
+
+
 
 .cate{
   padding:30px;

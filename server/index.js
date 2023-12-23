@@ -23,8 +23,8 @@ app.get("/ss",(req,res)=>{
     console.log("sudharsan opened a connection");
     UserModel.find({})
     .then(user=>{
-        console.log(user[0].categories)
-        res.json(user[0].categories);
+        console.log(user[0].imgslider)
+        res.json(user[0].imgslider);
     
     }
         )
