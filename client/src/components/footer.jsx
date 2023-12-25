@@ -16,7 +16,11 @@ function Footer(){
             </div>
             <div id="line"></div>
             <div id="links">
-                <a href="#"><img id="abimg" src="https://icons8.com/icon/AZOZNnY73haj/github"  alt="" /></a>
+                <h1 id="abouthead">PROFILES</h1>
+
+                <a href="https://github.com/25sudharsan27"><img  id="abimg" src="../../image/icons8-github.svg"  alt="" /></a>
+                <a href="https://www.linkedin.com/in/sudharsan-baskaran-182bb4255/"><img  id="abimg" src="../../image/icons8-linkedin.svg"  alt="" /></a>
+
             </div>
         </div>
     )
