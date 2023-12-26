@@ -6,7 +6,7 @@ This project is a frontend-clone of the popular e-commerce platform Flipkart. It
 Primary Goal of this project is to understand concepts of communcation between client server and backend server 
     <br>
     <br>
-    - Understand basic GET method operations<br>
+    - Understand basic GET method operations by using AXIOS api and node <br>
     - Understand the basics of mongoose module operations(Connection,Create Schema) in node server <br>
     - Understand the basics of React elements (UseState,UseEffect,BrowserRouter,Routes)<br>
 ## Features
