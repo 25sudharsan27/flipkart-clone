@@ -60,10 +60,11 @@ Folder Structure
 - **Client**: Contains the React frontend application.
 - **Server**: Contains the Node.js and Express.js backend server.
 - **categories.json**: MongoDB NoSQL data for website flipkart-clone.
+- **image** : Contains the screenshots of the clone-website
 
 
-<br>
-<br>
+
+
 **Laptop Screenshots**
 <br>
 <br>
