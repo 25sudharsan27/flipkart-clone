@@ -70,7 +70,8 @@ Folder Structure
 <br>
 <img src="image/lap1.png" >
 
-<br>
+
+
 **Dropdowns** 
 
 
