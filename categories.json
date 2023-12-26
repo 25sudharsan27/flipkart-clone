@@ -1,0 +1,129 @@
+{
+  "_id": {
+    "$oid": "6586cc3a29fcc3298990bfc7"
+  },
+  "categories": [
+    {
+      "name": "Grocery",
+      "image": "https://rukminim1.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100"
+    },
+    {
+      "name": "Mobiles",
+      "image": "https://rukminim1.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100"
+    },
+    {
+      "name": "Fashion",
+      "image": "https://rukminim1.flixcart.com/fk-p-flap/64/64/image/0d75b34f7d8fbcb3.png?q=100"
+    },
+    {
+      "name": "Electronics",
+      "image": "https://rukminim1.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100"
+    },
+    {
+      "name": "Home and Furniture",
+      "image": "https://rukminim1.flixcart.com/flap/64/64/image/ab7e2b022a4587dd.jpg?q=100"
+    },
+    {
+      "name": "Appliances",
+      "image": "https://rukminim1.flixcart.com/fk-p-flap/64/64/image/0139228b2f7eb413.jpg?q=100"
+    },
+    {
+      "name": "Travel",
+      "image": "https://rukminim1.flixcart.com/flap/64/64/image/71050627a56b4693.png?q=100"
+    },
+    {
+      "name": "Beauty,Toys and More",
+      "image": "https://rukminim1.flixcart.com/flap/64/64/image/dff3f7adcf3a90c6.png?q=100"
+    },
+    {
+      "name": "Two wheelers",
+      "image": "https://rukminim1.flixcart.com/fk-p-flap/64/64/image/05d708653beff580.png?q=100"
+    }
+  ],
+  "imgslider": [
+    {
+      "name": "slider1",
+      "image": "https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/4f9ffd5f11a2a4b9.jpg?q=20"
+    },
+    {
+      "name": "slider2",
+      "image": "https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/a787505b979e7579.jpg?q=20"
+    },
+    {
+      "name": "slider3",
+      "image": "https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/b1d99ada6bab3722.jpg?q=20"
+    }
+  ],
+  "productcat": [
+    {
+      "name": "Best Of Electronics",
+      "products": [
+        {
+          "name": "Pendrives & SD Cards",
+          "image": "https://rukminim2.flixcart.com/image/612/612/jwfa5jk0/pendrive/pendrive/z/f/p/sandisk-sdcz50-128g-i35-original-imafh3xkevktvq4w.jpeg?q=70",
+          "price": "From ₹289",
+          "rate": 289
+        },
+        {
+          "name": "Printers",
+          "image": "https://rukminim2.flixcart.com/image/612/612/jpmxuvk0/printer-refurbished/z/r/z/u-ts207-canon-original-imafbu3xpytszpgx.jpeg?q=70",
+          "price": "From ₹3999",
+          "rate": 3999
+        },
+        {
+          "name": "Top Mirrorless Cameras",
+          "image": "https://rukminim2.flixcart.com/image/312/312/kokdci80/dslr-camera/v/e/x/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.jpeg?q=70",
+          "price": "Shop Now!",
+          "rate": 69999
+        },
+        {
+          "name": "Top Selling Dell Keyboard",
+          "image": "https://rukminim2.flixcart.com/image/612/612/kb1470w0/keyboard/laptop-keyboard/g/9/z/logitech-mk240-nano-original-imafsgt66dbbqhay.jpeg?q=70",
+          "price": "From ₹229",
+          "rate": 229
+        },
+        {
+          "name": "Monitors",
+          "image": "https://rukminim2.flixcart.com/image/312/312/ko8xtow0/monitor/t/a/y/d24-20-66aekac1in-lenovo-original-imag2qwzazcdmqtb.jpeg?q=70",
+          "price": "From ₹4000",
+          "rate": 4000
+        }
+      ]
+    },
+    {
+      "name": "Beauty, Foods, Toys & more",
+      "products": [
+        {
+          "name": "Remote Control Toys",
+          "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/remote-control-toy/l/s/m/famous-car-remote-control-3d-car-with-led-lights-chargeable-1-original-imagzzx5yy2ggubg.jpeg?q=70",
+          "price": "Up to 60% OFF",
+          "rate": 0
+        },
+        {
+          "name": "Tricycles & Rideons",
+          "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/toy-weapon/m/u/k/-original-imagrzwyaxwzcz7s.jpeg?q=70",
+          "price": "Up To 70% OFF",
+          "rate": 0
+        },
+        {
+          "name": "Non Geared Cycles",
+          "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/cycle/6/2/h/r2-26-300-red-f-shocker-d-disk-fat-tyre-tube-for-height-5ft-original-imagkfmaayuzayyx.jpeg?q=70",
+          "price": "Up To 70% OFF",
+          "rate": 0
+        },
+        {
+          "name": "Tyres",
+          "image": "https://rukminim2.flixcart.com/image/612/612/kapoo7k0/vehicle-tire/w/z/w/105640-145-80-r12-fuelsmarrt-tl-74t-ceat-original-imafs7ebyzejhzkt.jpeg?q=70",
+          "price": "From ₹229",
+          "rate": 229
+        },
+        {
+          "name": "Soft Toys",
+          "image": "https://rukminim2.flixcart.com/image/612/612/kwl0akw0/stuffed-toy/a/w/s/stuffed-toys-5-feet-pink-teddy-bear-high-quality-love-teddy-for-original-imag982ajfkjw83h.jpeg?q=70",
+          "price": "From ₹400",
+          "rate": 400
+        }
+      ]
+    }
+  ]
+}
