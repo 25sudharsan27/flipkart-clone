@@ -60,7 +60,7 @@ function Navbar(){
               
               <div className="accountdropdown1"> 
                 <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logout-e63ddf.svg" height="20px" width="20px" alt="" />
-                <a className="accountdropdown1a" href="#">Logout</a>
+                <a className="accountdropdown1a" href="#">Login | Signin</a>
               </div>
               
           </div>
